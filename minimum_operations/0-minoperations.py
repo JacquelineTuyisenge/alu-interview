@@ -22,7 +22,7 @@ def minOperations(n):
     factors = 2
 
     while factors <= n:
-        if n % factors ==0:
+        if n % factors == 0:
             operations += factors
             n //= factors
         else:

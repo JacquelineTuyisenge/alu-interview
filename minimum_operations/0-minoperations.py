@@ -27,4 +27,4 @@ def minOperations(n):
             n //= factors
         else:
             factors += 1
-    return operatins
+    return operations

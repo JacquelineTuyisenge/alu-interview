@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """Calculate how many square units of water will be retained after it rains."""
 
+
 def rain(walls):
     """
     Calculate the amount of water retained after it rains.
 
     Args:
-        walls (list): A list of non-negative integers representing the heights of walls.
+        walls (list): non-negative integers .
 
     Returns:
         int: The total number of square units of water retained.

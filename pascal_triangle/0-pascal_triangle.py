@@ -5,6 +5,7 @@
 Module that defines a function to generate Pascal's Triangle.
 """
 
+
 def pascal_triangle(n):
     """
     Generates Pascal's Triangle up to the given level.
@@ -40,6 +41,7 @@ def pascal_triangle(n):
         triangle.append(row)
 
     return triangle
+
 
 def print_triangle(triangle):
     """

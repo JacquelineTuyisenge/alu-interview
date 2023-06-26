@@ -1,12 +1,21 @@
 #!/usr/bin/python3
-"""Creating a function that print a list of pascal triangle"""
-
+""" List of Pascal triangle """
 def pascal_triangle(n):
-  """Function that will print a list of pascal triangle"""
+  """ Pascal Triangle """
+    if n <= 0:
+        return []
 
-  for( x, prev, next ) in n:
-      x = [1, n]:
-  if( x = 1, x <= 5, x++ ):
-      print([1, (prev + next)]):
-  else:
-      print([])
+    triangle = [[1]]
+
+    for i in range(1, n):
+        row = [1]
+        prev_row = triangle[i - 1]
+
+        for j in range(1, i):
+            element = prev_row[j - 1] + prev_row[j]
+            row.append(element)
+
+        row.append(1)
+        triangle.append(row)
+
+    return triangle
